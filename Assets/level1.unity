@@ -231,12 +231,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1021542315565422, guid: cd56e6998fd07c84d8b2aca076a19011, type: 2}
       propertyPath: m_Name
-      value: 'SC: 0,0'
+      value: 'SC: 2,2'
       objectReference: {fileID: 0}
     - target: {fileID: 102211363618502164, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
       propertyPath: m_Text
-      value: 0,0
+      value: 2,2
       objectReference: {fileID: 0}
     - target: {fileID: 114335558049134038, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
@@ -297,12 +297,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1021542315565422, guid: cd56e6998fd07c84d8b2aca076a19011, type: 2}
       propertyPath: m_Name
-      value: 'SC: 0,0'
+      value: 'SC: 3,2'
       objectReference: {fileID: 0}
     - target: {fileID: 102211363618502164, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
       propertyPath: m_Text
-      value: 0,0
+      value: 3,2
       objectReference: {fileID: 0}
     - target: {fileID: 114335558049134038, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
@@ -429,12 +429,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1021542315565422, guid: cd56e6998fd07c84d8b2aca076a19011, type: 2}
       propertyPath: m_Name
-      value: 'SC: 0,0'
+      value: 'SC: 3,1'
       objectReference: {fileID: 0}
     - target: {fileID: 102211363618502164, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
       propertyPath: m_Text
-      value: 0,0
+      value: 3,1
       objectReference: {fileID: 0}
     - target: {fileID: 114335558049134038, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
@@ -639,12 +639,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1021542315565422, guid: cd56e6998fd07c84d8b2aca076a19011, type: 2}
       propertyPath: m_Name
-      value: 'SC: 0,0'
+      value: 'SC: 2,1'
       objectReference: {fileID: 0}
     - target: {fileID: 102211363618502164, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
       propertyPath: m_Text
-      value: 0,0
+      value: 2,1
       objectReference: {fileID: 0}
     - target: {fileID: 114335558049134038, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
@@ -700,12 +700,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1021542315565422, guid: cd56e6998fd07c84d8b2aca076a19011, type: 2}
       propertyPath: m_Name
-      value: 'SC: 0,0'
+      value: 'SC: 1,0'
       objectReference: {fileID: 0}
     - target: {fileID: 102211363618502164, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
       propertyPath: m_Text
-      value: 0,0
+      value: 1,0
       objectReference: {fileID: 0}
     - target: {fileID: 114335558049134038, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
@@ -767,12 +767,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1021542315565422, guid: cd56e6998fd07c84d8b2aca076a19011, type: 2}
       propertyPath: m_Name
-      value: 'SC: 0,0'
+      value: 'SC: 3,0'
       objectReference: {fileID: 0}
     - target: {fileID: 102211363618502164, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
       propertyPath: m_Text
-      value: 0,0
+      value: 3,0
       objectReference: {fileID: 0}
     - target: {fileID: 114335558049134038, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
@@ -834,12 +834,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1021542315565422, guid: cd56e6998fd07c84d8b2aca076a19011, type: 2}
       propertyPath: m_Name
-      value: 'SC: 0,0'
+      value: 'SC: 1,2'
       objectReference: {fileID: 0}
     - target: {fileID: 102211363618502164, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
       propertyPath: m_Text
-      value: 0,0
+      value: 1,2
       objectReference: {fileID: 0}
     - target: {fileID: 114335558049134038, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
@@ -895,12 +895,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1021542315565422, guid: cd56e6998fd07c84d8b2aca076a19011, type: 2}
       propertyPath: m_Name
-      value: 'SC: 0,0'
+      value: 'SC: 1,1'
       objectReference: {fileID: 0}
     - target: {fileID: 102211363618502164, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
       propertyPath: m_Text
-      value: 0,0
+      value: 1,1
       objectReference: {fileID: 0}
     - target: {fileID: 114335558049134038, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
@@ -923,6 +923,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1586575739}
+  - component: {fileID: 1586575740}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -954,6 +955,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1586575740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1586575738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f1d18e8a89fc3d49b4d8824a2c83390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWaypoint: {fileID: 845912971}
+  endWaypoint: {fileID: 2028234867}
 --- !u!1001 &1959550655
 Prefab:
   m_ObjectHideFlags: 0
@@ -995,12 +1009,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1021542315565422, guid: cd56e6998fd07c84d8b2aca076a19011, type: 2}
       propertyPath: m_Name
-      value: 'SC: 0,0'
+      value: 'SC: 4,1'
       objectReference: {fileID: 0}
     - target: {fileID: 102211363618502164, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
       propertyPath: m_Text
-      value: 0,0
+      value: 4,1
       objectReference: {fileID: 0}
     - target: {fileID: 114335558049134038, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
@@ -1015,6 +1029,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4284849164122696, guid: cd56e6998fd07c84d8b2aca076a19011,
     type: 2}
   m_PrefabInternal: {fileID: 1959550655}
+--- !u!114 &2028234867 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114575577288501640, guid: cd56e6998fd07c84d8b2aca076a19011,
+    type: 2}
+  m_PrefabInternal: {fileID: 1959550655}
+  m_Script: {fileID: 11500000, guid: ded722327da038e46a82e20321de401c, type: 3}
 --- !u!1001 &2090934329
 Prefab:
   m_ObjectHideFlags: 0
@@ -1056,12 +1076,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1021542315565422, guid: cd56e6998fd07c84d8b2aca076a19011, type: 2}
       propertyPath: m_Name
-      value: 'SC: 0,0'
+      value: 'SC: 2,0'
       objectReference: {fileID: 0}
     - target: {fileID: 102211363618502164, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}
       propertyPath: m_Text
-      value: 0,0
+      value: 2,0
       objectReference: {fileID: 0}
     - target: {fileID: 114335558049134038, guid: cd56e6998fd07c84d8b2aca076a19011,
         type: 2}

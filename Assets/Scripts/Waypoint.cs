@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Waypoint : MonoBehaviour {
 	
-	Vector2Int gridPos;
 	const int gridSize = 10;
 
 	public int GetGridSize() {
@@ -18,7 +17,8 @@ public class Waypoint : MonoBehaviour {
 		);
 	}
 
-	void Update() {
-		
+	public void SetTopColor(Color color) {
+		MeshRenderer topMeshRenderer = transform.Find("Top").GetComponent<MeshRenderer>();
+		topMeshRenderer.material.color = color;
 	}
 }
