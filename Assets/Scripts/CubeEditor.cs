@@ -6,19 +6,31 @@ using UnityEngine;
 [SelectionBase]
 public class CubeEditor : MonoBehaviour {
 
-    [Tooltip("It's that grid size!")][SerializeField][Range(1f, 20f)] float gridSize = 10f;
+    Waypoint waypoint;
 
-    TextMesh textMesh;
+    void Awake() {
+        waypoint = GetComponent<Waypoint>();
+    }
 
     void Update() {
-        Vector3 snapPos;
+        SnapToGrid();
+        UpdateLabel();
+    }
 
-        snapPos.x = Mathf.RoundToInt(transform.position.x / gridSize) * gridSize;
-        snapPos.z = Mathf.RoundToInt(transform.position.z / gridSize) * gridSize;
-        transform.position = new Vector3(snapPos.x, 0f, snapPos.z);
+    private void SnapToGrid() {
+        int gridSize = waypoint.GetGridSize();
+        waypoint.GetGridPos();
 
-        textMesh = GetComponentInChildren<TextMesh>();
-        string labelText = snapPos.x / gridSize + "," + snapPos.z / gridSize;
+        transform.position = new Vector3(
+           waypoint.GetGridPos().x * gridSize,
+           0f,
+           waypoint.GetGridPos().y * gridSize
+        );
+    }
+
+    private void UpdateLabel() {
+        TextMesh textMesh = GetComponentInChildren<TextMesh>();
+        string labelText = waypoint.GetGridPos().x + "," + waypoint.GetGridPos().y;
         textMesh.text = labelText;
         gameObject.name = "SC: " + labelText;
     }
