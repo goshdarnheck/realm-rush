@@ -9,6 +9,8 @@ public class Pathfinder : MonoBehaviour {
 	Dictionary<Vector2Int, Waypoint> grid = new Dictionary<Vector2Int, Waypoint>();
 	Queue<Waypoint> queue = new Queue<Waypoint>();
 	bool isRunning = true;
+	Waypoint searchCenter;
+
 	Vector2Int[] directions = {
 		Vector2Int.up,
 		Vector2Int.right,
@@ -20,39 +22,35 @@ public class Pathfinder : MonoBehaviour {
 		LoadBlocks();
 		ColorStartAndEnd();
 		Pathfind();
-		// ExploreNeighbours();
 	}
 
 	private void Pathfind() {
 		queue.Enqueue(startWaypoint);
 
 		while (queue.Count > 0 && isRunning) {
-			var searchCenter = queue.Dequeue();
+			searchCenter = queue.Dequeue();
 			searchCenter.isExplored = true;
-			print("Searching from: " + searchCenter); // todo remove log
-			
-			HaltIfEndFound(searchCenter);
-			ExploreNeighbours(searchCenter);
+			HaltIfEndFound();
+			ExploreNeighbours();
 		}
 
 		print("Finished pathfinding?");
 	}
 
-	private void HaltIfEndFound(Waypoint searchCenter) {
+	private void HaltIfEndFound() {
 		if (searchCenter == endWaypoint) {
 			print("Stopped because end found!");
 			isRunning = false;
 		}
 	}
 
-	private void ExploreNeighbours(Waypoint from) {
+	private void ExploreNeighbours() {
 		if (!isRunning) { return; }
 
 		foreach (Vector2Int direction in directions) {
-			Vector2Int neighbourCoordinates = from.GetGridPos() + direction;
+			Vector2Int neighbourCoordinates = searchCenter.GetGridPos() + direction;
 			try
             {
-                
                 QueueNewNeighbours(neighbourCoordinates);
             }
             catch {
@@ -64,12 +62,11 @@ public class Pathfinder : MonoBehaviour {
     private void QueueNewNeighbours(Vector2Int neighbourCoordinates) {
 		Waypoint neighbour = grid[neighbourCoordinates];
         
-		if (neighbour.isExplored) {
+		if (neighbour.isExplored || queue.Contains(neighbour)) {
 			// do nothing
 		} else {
-			neighbour.SetTopColor(Color.blue); // todo move
         	queue.Enqueue(neighbour);
-        	print("Queueing " + neighbour);
+			neighbour.exploredFrom = searchCenter;
 		}
     }
 

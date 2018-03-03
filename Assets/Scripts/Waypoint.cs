@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Waypoint : MonoBehaviour {
 	
+	Color exploredColor = Color.cyan;
+	
 	public bool isExplored = false;
+	public Waypoint exploredFrom;
 
 	const int gridSize = 10;
 
@@ -22,5 +25,11 @@ public class Waypoint : MonoBehaviour {
 	public void SetTopColor(Color color) {
 		MeshRenderer topMeshRenderer = transform.Find("Top").GetComponent<MeshRenderer>();
 		topMeshRenderer.material.color = color;
+	}
+
+	private void Update() {
+		if (exploredFrom != null) {
+			SetTopColor(exploredColor);
+		}
 	}
 }
